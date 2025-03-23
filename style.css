@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: white;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative; /* Para posicionar el botón de Mamber */
+}
+
+.container {
+    text-align: center;
+}
+
+.main-button {
+    background-color: #1e1e1e;
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 25px; /* Botón más redondeado */
+    transition: 0.3s;
+    margin-bottom: 20px; /* Espacio entre los botones */
+}
+
+.footer {
+    position: absolute; /* Posiciona el contenedor de Mamber */
+    bottom: 20px; /* Espacio desde el fondo */
+    right: 20px; /* Espacio desde la derecha */
+}
+
+.footer-button {
+    background-color: #1e1e1e;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 0.8em;
+    cursor: pointer;
+    border-radius: 25px; /* Botón más redondeado */
+}
+
+.glow-on-hover {
+    position: relative;
+    overflow: hidden;
+}
+
+.glow-on-hover:hover {
+    color: #00ff00; /* Cambia el color del texto a verde al pasar el cursor */
+}
+
+.main-button:hover {
+    box-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+}
+
+.footer-button:hover {
+    box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Resplandor más suave */
+    transition: box-shadow 0.5s; /* Efecto de transición más lento */
+}
